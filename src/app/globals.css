@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-hsl: 240 50% 5%;
+    --foreground-hsl: 240 5% 95%;
+
+    --card-hsl: 240 30% 10%;
+    --card-foreground-hsl: 240 5% 90%;
+
+    --popover-hsl: 240 50% 5%;
+    --popover-foreground-hsl: 240 5% 95%;
+
+    --primary-hsl: 326 92% 56%;
+    --primary-foreground-hsl: 0 0% 100%;
+
+    --secondary-hsl: 191 87% 62%;
+    --secondary-foreground-hsl: 240 50% 5%;
+
+    --muted-hsl: 240 20% 15%;
+    --muted-foreground-hsl: 240 5% 65%;
+
+    --accent-hsl: 240 25% 20%;
+    --accent-foreground-hsl: 240 5% 95%;
+
+    --destructive-hsl: 0 84% 60%;
+    --destructive-foreground-hsl: 0 0% 100%;
+
+    --border-hsl: 240 20% 25%;
+    --input-hsl: 240 20% 25%;
+    --ring-hsl: 326 92% 56%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background-hsl: 240 50% 5%;
+    --foreground-hsl: 240 5% 95%;
+
+    --card-hsl: 240 30% 10%;
+    --card-foreground-hsl: 240 5% 90%;
+
+    --popover-hsl: 240 50% 5%;
+    --popover-foreground-hsl: 240 5% 95%;
+
+    --primary-hsl: 326 92% 56%;
+    --primary-foreground-hsl: 0 0% 100%;
+
+    --secondary-hsl: 191 87% 62%;
+    --secondary-foreground-hsl: 240 50% 5%;
+
+    --muted-hsl: 240 20% 15%;
+    --muted-foreground-hsl: 240 5% 65%;
+
+    --accent-hsl: 240 25% 20%;
+    --accent-foreground-hsl: 240 5% 95%;
+
+    --destructive-hsl: 0 84% 60%;
+    --destructive-foreground-hsl: 0 0% 100%;
+
+    --border-hsl: 240 20% 25%;
+    --input-hsl: 240 20% 25%;
+    --ring-hsl: 326 92% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6, .text-glow {
+     text-shadow: 0 0 12px hsl(var(--primary) / 0.7);
+  }
+}
