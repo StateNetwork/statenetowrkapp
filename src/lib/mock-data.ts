@@ -47,4 +47,13 @@ export const users: User[] = [
     role: 'user',
     packages: [],
   },
+    {
+    id: 'user3',
+    uid: 'user3',
+    username: 'asiman',
+    email: 'asimandev@gmail.com',
+    avatar: 'https://picsum.photos/100/100',
+    role: 'admin',
+    packages: [],
+  },
 ];
